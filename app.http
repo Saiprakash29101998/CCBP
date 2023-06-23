@@ -1,0 +1,53 @@
+###
+### GET Players
+###
+
+GET http://localhost:3020/players/
+
+###
+
+###
+### POST Player
+###
+
+POST http://localhost:3020/players/
+Content-Type: application/json
+
+{
+  "playerName": "John Doe",
+  "jerseyNumber": 10,
+  "role": "Batsman"
+}
+
+###
+
+###
+### GET Player by ID
+###
+
+GET http://localhost:3020/players/10/
+
+###
+
+###
+### PUT Player by ID
+###
+
+PUT http://localhost:3020/players/1/
+Content-Type: application/json
+
+{
+  "playerName": "John Doe",
+  "jerseyNumber": 7,
+  "role": "All-rounder"
+}
+
+###
+
+###
+### DELETE Player by ID
+###
+
+DELETE http://localhost:3020/players/1/
+
+###
